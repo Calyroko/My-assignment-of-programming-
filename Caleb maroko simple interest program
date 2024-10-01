@@ -1,0 +1,30 @@
+//program to calculate simple interest 
+/*
+program to calculate simole interest
+author : caleb maroko
+date : 22-09-2024
+*/
+#include <stdio.h> //scanf(),printf()
+int main(){
+    //now let me store the variables values
+    float principal_amount = 'p';
+    float time = 't';
+    float rate = 'r';
+    float simple_interest = 's';
+    
+    //now to validate the formulae of the simple interest
+    printf("enter the  principal_amount :");
+    scanf("%f" ,&principal_amount);
+    printf("enter the rate of interest(in percentage)  :");
+    scanf("%f" , &rate);
+    printf("type a value of time(in years) :");
+    scanf("%f" , &time);
+    // now to calculate the formulae is
+    //S.I = PRT/100
+    simple_interest =( principal_amount * rate * time)/100;
+ 
+    printf("the simple interest is : %.2f\n " ,simple_interest);
+    //done with the work ready for submission
+    
+    return 0;
+}

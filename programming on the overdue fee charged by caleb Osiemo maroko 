@@ -1,0 +1,26 @@
+//programming on fee charged on overdue
+/*
+programming on fee charged on overdue
+author : caleb maroko
+date : 28 - 09 - 24
+*/
+#include <stdio.h> //printf() , scanf()
+int main (){
+    // storing variables
+    int Book_ID;
+    int Due_Date;
+    int Return_Date;
+    int overdue;
+    
+    // calculation of days of overdue formulae
+    overdue = Return_Date - Due_Date;
+    printf("how long was the overdue :");
+    scanf("%d", &overdue);
+    if (overdue <= 7) { 
+    printf ("Ksh 20.\n");
+    }else if (overdue >7 && overdue <=14)
+      { printf("Ksh 50. \n");
+    }else if (overdue>14){ printf ("Ksh 100.");
+    }
+    return 0;
+    }

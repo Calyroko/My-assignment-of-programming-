@@ -1,0 +1,24 @@
+//programming on if else 
+/*programming on if else
+author : caleb osiemo maroko
+date : 28 - 09 - 24
+*/
+#include <stdio.h> // scanf(), printf()
+int main (){
+    
+    //inserting variables
+    int years;
+    float income;
+    
+    printf("how old are you :");
+    scanf("%d", &years);
+    
+    printf("how much is your income :");
+    scanf("%f", &income);
+     if (years > 21 && income > 21000 ) {printf("congratulation you qualify for the loan.\n");
+    }else{ printf("unfortunately, we cannot offer you loan at this time.\n");
+    }
+         return 0;
+}
+    
+    

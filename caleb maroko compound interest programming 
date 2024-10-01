@@ -1,0 +1,40 @@
+//program to find simple interest 
+/*
+program to find compound interest
+author : caleb maroko
+date : 23-09-2024
+*/
+#include <stdio.h> //scanf(),printf()
+#include <math.h> //pow()
+// what i have learned from w3schools c programming does not support number raised to a power so i included pow ()
+int main(){
+    // to store value of variables
+    float time;
+    float amount;
+    float principal;
+    float rate;
+    float n;
+    float compound_interest;
+    // now to validate the formulae
+    printf("enter the principal amount :");
+    scanf("%f" , &principal);
+    printf("enter the number of times compounded per year :");
+    scanf("%f" ,&n);
+    printf("enter the rate :");
+    scanf("%f" ,&rate);
+    //now to input the formulae
+   // a = p(1 + r/n)^(n * t)
+   amount = principal * pow((1 + rate/n), n * time);
+   
+   printf("total amount : %.2f\n" , amount);
+   //now because we have the amount lets find the compound interest
+   compound_interest =  amount - principal;
+   printf("the compound interest is : %.2f\n" ,compound_interest);
+   //done with the work ready for submission
+   
+return 0;
+}    
+    
+    
+    
+           
